@@ -1,0 +1,9 @@
+{
+	"name": "adf-shared-dev-aue",
+	"location": "australiaeast",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "38d2ef9f-c881-40ee-b4e1-5eb74164f3d1",
+		"tenantId": "828ac48e-05ab-4d94-abaf-3ccae6f84aac"
+	}
+}
