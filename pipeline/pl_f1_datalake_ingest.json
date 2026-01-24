@@ -4,7 +4,7 @@
 		"activities": [
 			{
 				"name": "Ingest Cicuits File",
-				"type": "DatabricksNotebook",
+				"type": "DatabricksJob",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
@@ -15,12 +15,9 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"notebookPath": "/Users/alejandro.urriago@exposedata.com.au/databricks-spark-foundations/course/azure-databricks-spark-hands-on-project/notebooks/ingestion/1.ingest_circuits_file",
-					"baseParameters": {
-						"p_data_source": {
-							"value": "@variables('v_data_source')",
-							"type": "Expression"
-						},
+					"jobId": "1119866258499379",
+					"jobParameters": {
+						"p_data_source": "@variables('v_data_source')",
 						"p_file_date": {
 							"value": "@formatDateTime(pipeline().parameters.p_window_end_date,'yyyy-MM-dd')",
 							"type": "Expression"
