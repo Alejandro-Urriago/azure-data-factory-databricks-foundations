@@ -26,10 +26,6 @@
 							"type": "Expression"
 						}
 					}
-				},
-				"linkedServiceName": {
-					"referenceName": "ls_databricks_cluster_policy_f1_ws",
-					"type": "LinkedServiceReference"
 				}
 			}
 		],
