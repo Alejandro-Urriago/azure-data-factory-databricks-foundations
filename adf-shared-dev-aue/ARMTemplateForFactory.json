@@ -80,7 +80,7 @@
 							}
 						},
 						"linkedServiceName": {
-							"referenceName": "ls_databricks_f1_ws",
+							"referenceName": "ls_databricks_cluster_policy_f1_ws",
 							"type": "LinkedServiceReference"
 						}
 					}
@@ -102,7 +102,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/ls_databricks_f1_ws')]"
+				"[concat(variables('factoryId'), '/linkedServices/ls_databricks_cluster_policy_f1_ws')]"
 			]
 		},
 		{
@@ -128,6 +128,26 @@
 					"clusterOption": "Fixed",
 					"newClusterInitScripts": [],
 					"dataSecurityMode": "USER_ISOLATION"
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "[concat(parameters('factoryName'), '/ls_databricks_cluster_policy_f1_ws')]",
+			"type": "Microsoft.DataFactory/factories/linkedServices",
+			"apiVersion": "2018-06-01",
+			"properties": {
+				"annotations": [],
+				"type": "AzureDatabricks",
+				"typeProperties": {
+					"domain": "https://adb-7405607495438923.3.azuredatabricks.net",
+					"authentication": "MSI",
+					"workspaceResourceId": "/subscriptions/b80350c3-76d4-410c-9eb0-8b4f2c097d0b/resourceGroups/databricks-spark-lab-dev-aue-rg/providers/Microsoft.Databricks/workspaces/adb-alejandro-research-dev-aue-ws",
+					"newClusterNodeType": "Standard_D4s_v3",
+					"newClusterNumOfWorker": "1",
+					"newClusterVersion": "10.4.x-scala2.12",
+					"clusterOption": "Fixed",
+					"newClusterInitScripts": []
 				}
 			},
 			"dependsOn": []
