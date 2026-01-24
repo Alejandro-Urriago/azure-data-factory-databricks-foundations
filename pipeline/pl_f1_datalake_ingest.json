@@ -26,6 +26,10 @@
 							"type": "Expression"
 						}
 					}
+				},
+				"linkedServiceName": {
+					"referenceName": "ls_databricks_f1_job_ws",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
