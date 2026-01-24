@@ -16,10 +16,6 @@
 				"userProperties": [],
 				"typeProperties": {
 					"notebookPath": "/Users/alejandro.urriago@exposedata.com.au/databricks-spark-foundations/course/azure-databricks-spark-hands-on-project/notebooks/ingestion/testing"
-				},
-				"linkedServiceName": {
-					"referenceName": "ls_databricks_f1_ws",
-					"type": "LinkedServiceReference"
 				}
 			}
 		],
