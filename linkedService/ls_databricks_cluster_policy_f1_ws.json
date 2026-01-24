@@ -11,9 +11,9 @@
 			"newClusterNumOfWorker": "1",
 			"newClusterVersion": "10.4.x-scala2.12",
 			"clusterOption": "Fixed",
-			"newClusterInitScripts": []
+			"newClusterInitScripts": [],
+			"policyId": "0010D2E5D2AE8B7F",
+			"singleUserName": "189e4318-0dee-40f3-b91c-6672213684cf"
 		}
-	},
-	"policyId": "0010D2E5D2AE8B7F",
-	"dataSecurityMode": "SINGLE_USER"
+	}
 }
