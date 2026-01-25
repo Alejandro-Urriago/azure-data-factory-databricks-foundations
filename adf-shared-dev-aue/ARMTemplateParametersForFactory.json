@@ -5,8 +5,14 @@
 		"factoryName": {
 			"value": "adf-shared-dev-aue"
 		},
+		"ls_f1_storage_accountKey": {
+			"value": ""
+		},
 		"ls_databricks_f1_job_ws_properties_typeProperties_existingClusterId": {
 			"value": "0114-000840-dzz1ozvc"
+		},
+		"ls_f1_storage_properties_typeProperties_url": {
+			"value": "https://alejandroauedevdl.dfs.core.windows.net/"
 		}
 	}
 }
