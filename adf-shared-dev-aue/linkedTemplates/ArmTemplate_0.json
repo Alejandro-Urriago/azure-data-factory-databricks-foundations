@@ -19,7 +19,7 @@
 			"type": "string",
 			"defaultValue": "https://alejandroauedevdl.dfs.core.windows.net/"
 		},
-		"tr_process_f1_data_properties_pipeline_parameters_p_window_end_date": {
+		"tr_process_data_f1_properties_pipeline_parameters_p_window_end_date": {
 			"type": "string",
 			"defaultValue": "@trigger().outputs.windowEndTime"
 		}
@@ -413,7 +413,7 @@
 			]
 		},
 		{
-			"name": "[concat(parameters('factoryName'), '/tr_process_f1_data')]",
+			"name": "[concat(parameters('factoryName'), '/tr_process_data_f1')]",
 			"type": "Microsoft.DataFactory/factories/triggers",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -425,17 +425,17 @@
 						"type": "PipelineReference"
 					},
 					"parameters": {
-						"p_window_end_date": "[parameters('tr_process_f1_data_properties_pipeline_parameters_p_window_end_date')]"
+						"p_window_end_date": "[parameters('tr_process_data_f1_properties_pipeline_parameters_p_window_end_date')]"
 					}
 				},
 				"type": "TumblingWindowTrigger",
 				"typeProperties": {
 					"frequency": "Hour",
 					"interval": 168,
-					"startTime": "2021-03-12T22:00:00Z",
-					"endTime": "2021-04-23T22:00:00Z",
+					"startTime": "2021-03-14T11:00:00Z",
+					"endTime": "2021-04-25T12:00:00Z",
 					"delay": "00:00:00",
-					"maxConcurrency": 50,
+					"maxConcurrency": 1,
 					"retryPolicy": {
 						"intervalInSeconds": 30
 					},
